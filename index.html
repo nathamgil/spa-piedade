@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spa das Sobrancelhas Piedade · Salvador</title>
+<meta name="description" content="Spa das Sobrancelhas Piedade: Dermolev, fio a fio, micropigmentação Shadow e labial no Shopping Piedade, Piso L2. Agende pelo site.">
+<meta name="theme-color" content="#4B2A82">
+<link rel="icon" href="assets/monograma.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spa das Sobrancelhas Piedade">
+<meta property="og:description" content="Unidade destaque em Dermolev e Fio a fio no Brasil. Agende seu horário.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118181813">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"Spa das Sobrancelhas Piedade","telephone":"+55 71 3266-6093","address":{"@type":"PostalAddress","streetAddress":"Shopping Piedade, Piso L2","addressLocality":"Salvador","addressRegion":"BA","addressCountry":"BR"},"sameAs":["https://www.instagram.com/spapiedade/"]}
+</script>
+</head>
+<body>
+
+<div id="faixa-demo" class="faixa-demo" hidden>
+  <b>Versão de demonstração.</b> O agendamento funciona de verdade, mas fica guardado só neste aparelho até ligarmos o banco de dados.
+</div>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html" aria-label="Spa das Sobrancelhas Piedade, início">
+      <img src="assets/monograma.svg" alt="" width="48" height="48">
+      <span><b>Spa das Sobrancelhas</b><small>Unidade Piedade</small></span>
+    </a>
+    <button class="btn-menu" id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu" aria-label="Páginas">
+      <a href="index.html">Início</a>
+      <a href="tratamentos.html">Procedimentos</a>
+      <a href="metodo.html">Como funciona</a>
+      <a href="index.html#meu-horario">Meu horário</a>
+      <a class="btn btn-cacau mini" href="index.html#agendar">Agendar horário</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= CAPA ================= -->
+<section class="capa">
+  <div class="wrap capa-in">
+    <div class="capa-txt">
+      <p class="olho">Shopping Piedade · Piso L2</p>
+      <h1>Sobrancelha de <em>destaque no Brasil</em></h1>
+      <p class="lead">A unidade Piedade do Spa das Sobrancelhas é <b>destaque nacional em Dermolev e Fio a fio</b>. Escolha o procedimento, o dia e o horário aqui mesmo, sem fila de mensagem.</p>
+      <div class="acoes">
+        <a class="btn btn-cacau" href="#agendar">Agendar meu horário</a>
+        <a class="btn btn-linha" href="tratamentos.html">Ver procedimentos</a>
+      </div>
+      <ul class="promessas" aria-label="Números do Instagram">
+        <li><b>+40 mil</b><span>seguidores no Instagram</span></li>
+        <li><b>+1.600</b><span>posts de antes e depois</span></li>
+      </ul>
+      <p class="nota-fina">Números e título de destaque tirados do Instagram @spapiedade.</p>
+    </div>
+    <div class="capa-arte">
+      <div class="arco arco-grande arco-foto">
+        <img src="fotos/f2.jpg" alt="Sobrancelha feita na unidade Piedade, antes e depois" loading="eager">
+      </div>
+      <div class="cartao-vaga" id="prox-vaga" hidden>
+        <span class="cv-rot">Próximo horário livre</span>
+        <b id="prox-quando"></b>
+        <button class="btn btn-ouro mini" id="prox-reservar" type="button">Reservar esse horário</button>
+      </div>
+      <div class="cartao-flutua"><span class="estrela" aria-hidden="true">🏆</span> Destaque em<br><b>Dermolev e Fio a fio</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OBJETIVOS ================= -->
+<section class="faixa-obj">
+  <div class="wrap">
+    <h2 class="obj-tit">Qual é o seu objetivo hoje?</h2>
+    <div class="objetivos-capa" id="objetivos-capa"></div>
+  </div>
+</section>
+
+<!-- ================= ANTES E DEPOIS ================= -->
+<section class="secao secao-creme" id="resultados">
+  <div class="wrap">
+    <p class="olho">Antes e depois</p>
+    <h2>O resultado fala <em>por si</em></h2>
+    <p class="sub">Trabalhos reais da unidade, publicados no Instagram @spapiedade.</p>
+    <div class="galeria-real">
+      <figure><img src="fotos/f5.jpg" alt="Fio a fio, antes e depois" loading="lazy"><figcaption>Antes e depois</figcaption></figure>
+      <figure><img src="fotos/f6.jpg" alt="Micropigmentação Shadow" loading="lazy"><figcaption>Micropigmentação Shadow</figcaption></figure>
+      <figure><img src="fotos/f3.jpg" alt="Sobrancelha masculina, antes e depois" loading="lazy"><figcaption>Fio em homens</figcaption></figure>
+      <figure><img src="fotos/f4.jpg" alt="Design de sobrancelha, antes e depois" loading="lazy"><figcaption>Design</figcaption></figure>
+      <figure><img src="fotos/f7.jpg" alt="Sobrancelha, antes e depois" loading="lazy"><figcaption>Antes e depois</figcaption></figure>
+      <figure><img src="fotos/f1.jpg" alt="Retorno de micropigmentação" loading="lazy"><figcaption>Retorno de micropigmentação</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRATAMENTOS ================= -->
+<section class="secao" id="tratamentos">
+  <div class="wrap">
+    <div class="cab-secao">
+      <div>
+        <p class="olho">Procedimentos</p>
+        <h2>Sobrancelhas, <em>lábios</em> e masculino</h2>
+      </div>
+      <a class="btn btn-linha mini" href="tratamentos.html">Ver todos em detalhe</a>
+    </div>
+    <div class="grade-trat" id="grade-tratamentos"></div>
+  </div>
+</section>
+
+<!-- ================= MANIFESTO ================= -->
+<section class="manifesto">
+  <div class="wrap">
+    <p class="manifesto-frase">“Unidade destaque em Dermolev e Fio a fio no Brasil.”</p>
+    <p class="manifesto-assina">Spa das Sobrancelhas · Piedade</p>
+    <div class="manifesto-pilares">
+      <div><b>Dermolev</b><span>A técnica em que a unidade é referência nacional.</span></div>
+      <div><b>Fio a fio</b><span>Fios desenhados um a um, com design estratégico antes.</span></div>
+      <div><b>No centro</b><span>Shopping Piedade, Piso L2. Segunda a sábado, 9h às 20h.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AGENDAR ================= -->
+<section class="secao secao-creme agendar" id="agendar">
+  <div class="wrap">
+    <p class="olho">Agendamento</p>
+    <h2>Agende seu <em>horário</em></h2>
+    <p class="sub">Uns dois minutos, sem cadastro. Valores sob consulta com a unidade: aqui você só reserva o horário.</p>
+
+    <div class="painel" id="agendar-app">
+      <div class="passos" id="passos">
+        <div class="passo" data-estado="atual">1 · Unidade</div>
+        <div class="passo" data-estado="aberto">2 · Objetivo e procedimento</div>
+        <div class="passo" data-estado="aberto">3 · Sobre você</div>
+        <div class="passo" data-estado="aberto">4 · Dia e horário</div>
+        <div class="passo" data-estado="aberto">5 · Seus dados</div>
+      </div>
+      <div class="escolhas" id="escolhas" hidden></div>
+
+      <div class="etapa" data-etapa="1" data-ativa>
+        <h3>Em qual unidade?</h3>
+        <div class="lista-barbeiros" id="lista-barbeiros"></div>
+      </div>
+
+      <div class="etapa" data-etapa="2">
+        <h3>Qual é o seu objetivo?</h3>
+        <p class="dica">Escolha o que mais pesa hoje. Depois, o procedimento que te interessa.</p>
+        <div class="objs" id="obj-chips" role="group" aria-label="Objetivo"></div>
+        <div class="trat-box" id="trat-box">
+          <p class="trat-titulo" id="trat-titulo">Todos os procedimentos</p>
+          <div id="lista-servicos"></div>
+        </div>
+        <div class="acoes"><button class="voltar" type="button" data-voltar="1">← Voltar</button></div>
+      </div>
+
+      <div class="etapa" data-etapa="3">
+        <h3>Sobre você</h3>
+        <p class="dica">Perguntas rápidas para a equipe preparar o seu atendimento. Todas opcionais.</p>
+        <div class="projeto" id="projeto">
+          <div class="campos">
+            <div class="pergunta">
+              <span class="rotulo-campo">Já fez micropigmentação antes?</span>
+              <div class="chips" data-grupo="ja-fez" data-rotulo="Já fez micropigmentação"><button type="button" class="chip" aria-pressed="false">Sim</button><button type="button" class="chip" aria-pressed="false">Não</button></div>
+            </div>
+            <div class="pergunta">
+              <span class="rotulo-campo">Está gestante?</span>
+              <div class="chips" data-grupo="gestante" data-rotulo="Gestante"><button type="button" class="chip" aria-pressed="false">Sim</button><button type="button" class="chip" aria-pressed="false">Não</button></div>
+            </div>
+            <div class="pergunta">
+              <span class="rotulo-campo">Usa ácidos ou roacutan?</span>
+              <div class="chips" data-grupo="cirurgia" data-rotulo="Usa ácidos/roacutan"><button type="button" class="chip" aria-pressed="false">Sim</button><button type="button" class="chip" aria-pressed="false">Não</button></div>
+            </div>
+            <div class="pergunta">
+              <span class="rotulo-campo">Prefere ser atendido(a)</span>
+              <div class="chips" data-grupo="turno" data-rotulo="Prefere"><button type="button" class="chip" aria-pressed="false">De manhã</button><button type="button" class="chip" aria-pressed="false">À tarde</button><button type="button" class="chip" aria-pressed="false">Tanto faz</button></div>
+            </div>
+            <div class="campo">
+              <label for="pj-ideia">O que você quer mudar na sobrancelha? <small>(opcional)</small></label>
+              <textarea id="pj-ideia" maxlength="500" placeholder="Ex: tenho falha no final; quero um desenho mais natural"></textarea>
+            </div>
+          </div>
+        </div>
+        <div id="msg-projeto"></div>
+        <div class="acoes">
+          <button class="btn btn-cacau" id="pj-continuar" type="button">Escolher dia e horário →</button>
+          <button class="voltar" type="button" data-voltar="2">← Trocar o procedimento</button>
+        </div>
+      </div>
+
+      <div class="etapa" data-etapa="4">
+        <h3>Dia e horário</h3>
+        <p class="dica">A duração depende do procedimento (a confirmar). A confirmação vem pelo WhatsApp.</p>
+        <div class="fita" id="fita-dias"></div>
+        <p class="titulo-dia" id="titulo-dia"></p>
+        <div id="caixa-horas"></div>
+        <div class="acoes"><button class="voltar" type="button" data-voltar="3">← Voltar</button></div>
+      </div>
+
+      <div class="etapa" data-etapa="5">
+        <h3>Seus dados</h3>
+        <p class="dica">Só para a unidade confirmar o seu horário.</p>
+        <div class="resumo" id="resumo"></div>
+        <form id="form-cliente" novalidate>
+          <div class="campos">
+            <div class="campo"><label for="cli-nome">Seu nome</label><input id="cli-nome" type="text" autocomplete="name" placeholder="Nome e sobrenome" required></div>
+            <div class="campo">
+              <label for="cli-tel">WhatsApp</label>
+              <input id="cli-tel" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(71) 9 0000-0000" required>
+              <p class="ajuda">Para confirmar o horário. Não vai para lista de propaganda.</p>
+            </div>
+            <div class="campo">
+              <label for="cli-obs"><span id="cli-obs-rot">Algo mais</span> <small>(opcional)</small></label>
+              <textarea id="cli-obs" maxlength="240" placeholder="Alguma observação para a equipe"></textarea>
+            </div>
+          </div>
+          <div id="msg-form"></div>
+          <div class="acoes">
+            <button class="btn btn-cacau" id="btn-confirmar" type="submit">Confirmar horário</button>
+            <button class="voltar" type="button" data-voltar="4">← Trocar o horário</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="etapa" data-etapa="6">
+        <div class="sucesso">
+          <div class="selo-ok" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Horário reservado</h3>
+          <p class="com">com <span id="ok-barbeiro"></span></p>
+          <p class="dica" id="ok-linha"></p>
+          <p class="rotulo-codigo">Seu código</p>
+          <div class="codigo" id="ok-codigo"></div>
+          <p class="expl">Seu horário está guardado. Agora mande o resumo no WhatsApp da unidade para confirmar. Com o código você consulta ou cancela até 4 horas antes.</p>
+          <div class="acoes">
+            <a class="btn btn-zap" id="ok-zap" target="_blank" rel="noopener">Mandar no WhatsApp</a>
+            <button class="btn btn-linha" id="ok-copiar" type="button">Copiar resumo</button>
+            <a class="btn btn-linha" id="ok-ics">Salvar no calendário</a>
+            <button class="btn btn-linha" id="btn-novo" type="button">Agendar outra</button>
+          </div>
+          <p class="copiado" id="ok-copiado" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEU HORÁRIO ================= -->
+<section class="secao" id="meu-horario">
+  <div class="wrap dupla">
+    <div>
+      <p class="olho">Já agendou?</p>
+      <h2>Consultar ou <em>cancelar</em></h2>
+      <p class="sub">Imprevisto acontece. Cancele por aqui e o horário volta para a agenda. Vale até <b>4 horas antes</b>; depois disso, chame a unidade no WhatsApp.</p>
+    </div>
+    <div class="cartao">
+      <form id="form-consulta">
+        <div class="campos">
+          <div class="campo"><label for="con-codigo">Código</label><input id="con-codigo" type="text" placeholder="Ex: A3F91C" style="text-transform:uppercase" required></div>
+          <div class="campo"><label for="con-tel">WhatsApp usado</label><input id="con-tel" type="tel" inputmode="numeric" placeholder="(71) 9 0000-0000" required></div>
+          <button class="btn btn-cacau btn-bloco" type="submit">Buscar meu horário</button>
+        </div>
+      </form>
+      <div id="saida-consulta"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="secao secao-rose" id="contato">
+  <div class="wrap convite">
+    <div>
+      <p class="olho">Visite a unidade</p>
+      <h2>No <em>Shopping Piedade</em></h2>
+      <p class="sub">Piso L2, no centro de Salvador. Segunda a sábado, das 9h às 20h.</p>
+      <div class="info-linhas">
+        <div><b>Endereço</b><span>Shopping Piedade, Piso L2<br>Salvador — BA</span></div>
+        <div><b>Telefone</b><a href="tel:+557132666093">(71) 3266-6093</a></div>
+        <div><b>WhatsApp</b><a href="https://wa.me/5571983000352" target="_blank" rel="noopener">(71) 98300-0352</a></div>
+        <div><b>Instagram</b><a href="https://www.instagram.com/spapiedade/" target="_blank" rel="noopener">@spapiedade</a></div>
+      </div>
+      <div class="acoes">
+        <a class="btn btn-zap" data-zap href="https://wa.me/5571983000352" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-linha" href="#agendar">Agendar horário</a>
+      </div>
+    </div>
+    <div class="arco arco-medio arco-foto"><img src="fotos/f7.jpg" alt="Sobrancelha feita na unidade" loading="lazy"></div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-in">
+      <div>
+        <a class="marca" href="index.html"><img src="assets/monograma.svg" alt="" width="48" height="48"><span><b>Spa das Sobrancelhas</b><small>Unidade Piedade</small></span></a>
+        <p>Unidade destaque em Dermolev e Fio a fio no Brasil. Shopping Piedade, Piso L2, seg. a sáb., 9h às 20h.</p>
+      </div>
+      <div>
+        <b class="rodape-titulo">Páginas</b>
+        <ul class="rodape-links">
+          <li><a href="tratamentos.html">Procedimentos</a></li>
+          <li><a href="metodo.html">Como funciona</a></li>
+          <li><a href="index.html#agendar">Agendar horário</a></li>
+          <li><a href="index.html#meu-horario">Consultar ou cancelar</a></li>
+        </ul>
+      </div>
+      <div>
+        <b class="rodape-titulo">Contato</b>
+        <ul class="rodape-links">
+          <li><a data-zap href="https://wa.me/5571983000352" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/spapiedade/" target="_blank" rel="noopener">@spapiedade</a></li>
+          <li><a href="admin.html">Área da equipe</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="creditos">
+      <span>© <span class="ano"></span> Spa das Sobrancelhas Piedade</span>
+      <span>Guardamos nome, WhatsApp e as respostas da pré-sessão só para organizar a agenda. Para apagar seus dados, é só pedir no WhatsApp.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="flutua btn btn-cacau" href="#agendar">Agendar horário</a>
+
+<script src="assets/config.js?v=20261118181813"></script>
+<script src="assets/demo.js?v=20261118181813"></script>
+<script src="assets/site.js?v=20261118181813"></script>
+<script src="assets/avaliacao.js?v=20261118181813"></script>
+<script src="assets/agenda.js?v=20261118181813"></script>
+</body>
+</html>
