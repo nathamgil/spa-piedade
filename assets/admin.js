@@ -25,7 +25,7 @@
     { id: 'novo',      nome: 'Nova' },
     { id: 'conversa',  nome: 'Em contato' },
     { id: 'orcado',    nome: 'Avaliada' },
-    { id: 'marcado',   nome: 'Em protocolo' },
+    { id: 'marcado',   nome: 'Com retorno' },
     { id: 'concluido', nome: 'Concluiu' },
     { id: 'recusado',  nome: 'Desistiu' }
   ];
@@ -239,7 +239,7 @@
     if (/\(exemplo\)/.test(p.nome)) nm.appendChild(el('small', 'ex', 'exemplo'));
     cab.appendChild(nm);
     b.appendChild(cab);
-    b.appendChild(el('span', 'ped-linha', p.sessao ? p.servico : 'Sessão · ' + p.servico + ' · ' + estiloDe(p)));
+    b.appendChild(el('span', 'ped-linha', p.sessao ? p.servico : p.servico + ' · ' + estiloDe(p)));
     var rod = el('span', 'ped-rod');
     rod.appendChild(el('span', null, relativo(p.dia) + ' · ' + p.inicio));
     if (p.anexos.length) rod.appendChild(el('span', 'clip', p.anexos.length + (p.anexos.length === 1 ? ' referência' : ' referências')));
@@ -286,9 +286,9 @@
 
     $('#geral-tit').textContent = porExtenso(hoje) + (filtro ? ' · ' + artistaDe(filtro).nome : '');
     var k = $('#kpis'); k.innerHTML = '';
-    kpi(k, novos.length, 'Sessões novas', 'agendadas pelo site, sem contato ainda', novos.length ? 'alerta' : 'branco', function () { etapaMobile = 'novo'; vaiAba('pedidos'); });
-    kpi(k, semana.length, 'Atendimentos', 'sessões e sessões nos próximos 7 dias', 'ouro', function () { vaiAba('agenda'); });
-    kpi(k, emProt.length, 'Em protocolo', 'clientes em tratamento', 'papel', function () { vaiAba('clientes'); });
+    kpi(k, novos.length, 'Agendamentos novos', 'feitos pelo site, sem contato ainda', novos.length ? 'alerta' : 'branco', function () { etapaMobile = 'novo'; vaiAba('pedidos'); });
+    kpi(k, semana.length, 'Atendimentos', 'procedimentos e retornos nos próximos 7 dias', 'ouro', function () { vaiAba('agenda'); });
+    kpi(k, emProt.length, 'Com retorno', 'clientes com retorno marcado', 'papel', function () { vaiAba('clientes'); });
     var c = el('div', 'kpi kpi-prox');
     c.appendChild(el('span', 'kpi-rot', 'Próximo atendimento'));
     if (prox) {
@@ -764,7 +764,7 @@
     // tipo de projeto (com números e funil) e estilo lado a lado
     function categoria(pre, l, chave) {
       var r = resumo(l), nums = $('#rel-' + pre + '-nums'); if (!nums) nums = el('div'); nums.innerHTML = '';
-      [[r.n, 'Sessões'], [r.viraram, 'Em protocolo'], [r.conv, 'Conversão'], [reais(r.orcado), 'Em planos']].forEach(function (x) {
+      [[r.n, 'Agendamentos'], [r.viraram, 'Fecharam'], [r.conv, 'Conversão'], [reais(r.orcado), 'Em planos']].forEach(function (x) {
         var d = el('div', 'rel-num'); d.appendChild(el('b', null, String(x[0]))); d.appendChild(el('span', null, x[1])); nums.appendChild(d);
       });
       var cont = {};
