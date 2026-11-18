@@ -1,5 +1,5 @@
 /* =====================================================================
-   Vitrine da Equilíbrio do Corpo (todas as páginas) — não depende do motor.
+   Vitrine do Spa das Sobrancelhas Piedade (todas as páginas) — não depende do motor.
    - faixa de demo, ano, menu do celular, página atual no menu
    - cards de tratamento (capa) e fichas completas (tratamentos.html)
    - "próxima sessão livre" na capa (usa o motor quando ele carrega)

@@ -1,5 +1,5 @@
 /* =====================================================================
-   Painel da Equilíbrio do Corpo
+   Painel do Spa das Sobrancelhas Piedade
    Visão geral · funil de sessões (Nova → Em contato → Avaliada →
    Em protocolo → Concluiu / Desistiu) · agenda da semana (sessões e
    sessões) · clientes · relatório por objetivo e tratamento.
@@ -212,7 +212,7 @@
       .sort(function (a, b) { return (a.dia + a.inicio) < (b.dia + b.inicio) ? -1 : 1; });
   }
 
-  // "Equilíbrio do Corpo" -> CR
+  // "Spa das Sobrancelhas Piedade" -> SP
   function iniciais(nome) {
     var p = String(nome || '').trim().split(/\s+/).filter(Boolean);
     if (!p.length) return '?';
@@ -369,7 +369,7 @@
   gaveta.addEventListener('click', function (e) { if (e.target === gaveta) gaveta.close(); });
 
   function msgZap(p, etapa) {
-    var ola = 'Oi, ' + primeiroNome(p.nome) + '! Aqui é da Equilíbrio do Corpo. ';
+    var ola = 'Oi, ' + primeiroNome(p.nome) + '! Aqui é do Spa das Sobrancelhas Piedade. ';
     var quando = porExtenso(p.dia).toLowerCase() + ' às ' + p.inicio;
     var trat = p.servico.replace(/^Sessão · /, '');
     if (p.sessao) return ola + 'Passando para lembrar da sua sessão de ' + trat + ': ' + quando + '. Te espero!';
